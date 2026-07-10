@@ -59,7 +59,7 @@ header{
 
 .hero h2{
     font-size:2.5rem;
-    color:#83D483;
+    color:#40bff1;
 }
 
 .hero-overlay{
@@ -86,7 +86,7 @@ header{
 .hero-overlay h2{
     font-size:1.8rem;
     font-weight:500;
-    color:#83D483;
+    color:#40bff1;
 }
 
 .hero-overlay p{
@@ -126,17 +126,17 @@ header{
 }
 
 .primary{
-    background:#83D483;
+    background:#40bff1;
     color:#161616;
 
-    border:2px solid #83D483;
+    border:2px solid #40bff1;
 }
 
 .primary:hover{
     transform:translateY(-3px);
-    background:#9BE09B;
+    background:#40bff1;
     box-shadow:
-        0 8px 20px rgba(131,212,131,.25);
+        0 8px 20px rgba(131, 204, 212, 0.25);
 }
 
 .secondary{
@@ -148,8 +148,8 @@ header{
 
 .secondary:hover{
     transform:translateY(-3px);
-    border-color:#83D483;
-    color:#83D483;
+    border-color:#40bff1;
+    color:#40bff1;
     background:rgba(131,212,131,.08);
 }
 
@@ -187,12 +187,12 @@ header{
     bottom:-6px;
     width:0;
     height:2px;
-    background:#83D483;
+    background:#40bff1;
     transition:.25s;
 }
 
 .navbar a:hover{
-    color:#83D483;
+    color:#40bff1;
 }
 
 .navbar a:hover::after{
@@ -219,7 +219,7 @@ header{
     display:block;
     width:80px;
     height:4px;
-    background:#83D483;
+    background:#40bff1;
     margin-top:15px;
     border-radius:5px;
 }
@@ -260,7 +260,7 @@ header{
 
 .project-card:hover{
     transform:translateY(-5px);
-    border-color:#83D483;
+    border-color:#40bff1;
     box-shadow:0 18px 45px rgba(0,0,0,.35);
 }
 
@@ -274,7 +274,7 @@ header{
 .project-content h3{
     font-size:2rem;
     margin-bottom:18px;
-    color:#83D483;
+    color:#40bff1;
 }
 
 .project-content p{
@@ -297,14 +297,14 @@ header{
 }
 
 .project-card:hover .project-link{
-    color:#83D483;
+    color:#40bff1;
     transform:translateX(5px);
 }
 
 .project-content h3{
     font-size: 2rem;
     font-weight: 700;
-    color: #83D483;
+    color: #40bff1;
     margin-bottom: 15px;
 }
 
@@ -313,12 +313,12 @@ header{
     background:#2A2A2A;
     border:1px solid #353535;
     border-radius:999px;
-    color:#83D483;
+    color:#40bff1;
     font-size:.9rem;
 }
 
 .project-tags span a{
-    color:#83D483;
+    color:#40bff1;
     font-size:.9rem;
 }
 
@@ -349,7 +349,7 @@ footer{
 }
 
 .footer-content h2{
-    color:#83D483;
+    color:#40bff1;
     font-size:2rem;
 }
 
@@ -371,7 +371,7 @@ footer{
 }
 
 .footer-links a:hover{
-    color:#83D483;
+    color:#40bff1;
 }
 
 .footer-message{
