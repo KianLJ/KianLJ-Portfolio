@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
-    <title>Test Website</title>
+    <title>Kian Lee-Jones</title>
 </head>
 
 <script>
@@ -16,7 +17,66 @@ fetch("components/navbar.html")
 .then(data => {
     document.getElementById("navbar").innerHTML = data;
 });
-</script>
 
+fetch("components/footer.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+</script>
 <body>
     <div id="navbar"></div>
+
+    <section class="skills-hero">
+        <h1>Skills</h1>
+        <p>
+            Technologies, engines and workflows I've developed through university projects and personal learning.
+        </p>
+    </section>
+    <section class="skills-section">
+        <h2>Programming</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>C++</h3>
+                <p>
+                    Gameplay systems, debugging and object-oriented programming.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3>C#</h3>
+                <p>
+                    Unity scripting and gameplay mechanics.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3>Blueprints</h3>
+                <p>
+                    Gameplay logic and rapid prototyping in Unreal Engine.
+                </p>
+            </div>
+    </section>
+    <section class="skills-section">
+        <h2>Software</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Excel</h3>
+                <p>
+                    Data analysis, planning and sprint sheets.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3>MAYA</h3>
+                <p>
+                    3D Modelling, UV unwrapping and Rigging.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3>Photoshop</h3>
+                <p>
+                    Texture Editing, Image editing and design.
+                </p>
+            </div>
+    </section>
+    <div id="footer"></div>
+</body>
+</html>
