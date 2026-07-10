@@ -317,6 +317,11 @@ header{
     font-size:.9rem;
 }
 
+.project-tags span a{
+    color:#83D483;
+    font-size:.9rem;
+}
+
 .project-card:nth-child(even){
     direction:rtl;
 }

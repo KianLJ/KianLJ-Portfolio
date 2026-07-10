@@ -44,6 +44,10 @@
     box-shadow:0 0 12px rgba(131,212,131,.25);
 }
 
+.contact-form textarea{
+    resize: none;
+}
+
 .contact-form input,
 .contact-form textarea{
     background:#161616;
@@ -57,11 +61,8 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus{
-
     outline:none;
-
     border-color: #83D483;
-
     box-shadow:0 0 12px rgba(131,212,131,.25);
 }
 
