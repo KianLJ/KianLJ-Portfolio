@@ -39,6 +39,7 @@
     display:block;
     background:#1E1E1E;
     border:2px solid #2A2A2A;
+    min-width: 560px;
     border-radius:20px;
     overflow:hidden;
     text-decoration:none;
