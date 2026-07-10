@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <title>Test Website</title>
+</head>
+
+<script>
+fetch("components/navbar.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("navbar").innerHTML = data;
+});
+</script>
+
+<body>
+    <div id="navbar"></div>
+    <section class="project-hero">
+        <video class="project-video" autoplay muted loop playsinline>
+            <source src="videoplayback.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-overlay">
+            <h1>Sand</h1>
+            <p>
+                A multiplayer sandbox experience built in Unreal Engine 5,
+                focusing on physics interactions, networking and player freedom.
+            </p>
+            <div class="project-tags">
+                <span>Unreal Engine 5</span>
+                <span>C++</span>
+                <span>Multiplayer</span>
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <h2>Overview</h2>
+        <div class="project-content">
+            <div class="project-image">
+                <span>Project Screenshot</span>
+            </div>
+            <div class="project-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer consequat nunc at velit aliquet, non tincidunt augue
+                    facilisis. Suspendisse potenti. Curabitur ac neque ut nunc
+                    tristique ullamcorper.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <h2>Overview</h2>
+        <div class="project-content">
+            <div class="project-image">
+                <span>Project Screenshot</span>
+            </div>
+            <div class="project-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer consequat nunc at velit aliquet, non tincidunt augue
+                    facilisis. Suspendisse potenti. Curabitur ac neque ut nunc
+                    tristique ullamcorper.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Kian Lee-Jones</h2>
+            <p>Games Design & Programming Student</p>
+            <div class="footer-links">
+                <a href="#">Email</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+            <p>
+                Interested in game development opportunities? 
+                Feel free to get in touch.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

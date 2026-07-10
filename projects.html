@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <title>Test Website</title>
+</head>
+
+<script>
+fetch("components/navbar.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("navbar").innerHTML = data;
+});
+</script>
+
+<body>
+    <div id="navbar"></div>
+
+    <section class="portfolio">
+        <div class="portfolio-header">
+            <h1>Projects</h1>
+            <p>
+                A collection of games and technical projects
+                I've developed throughout my studies.
+            </p>
+        </div>
+        <div class="portfolio-grid">
+            <a href="celestial-frontier-portfolio.html" class="portfolio-card">
+                <img src="images/sand-raiders-of-sophie-pc-steam-cover.jpg" alt="Sand gameplay">
+                <div class="portfolio-content">
+                    <h2>Sand</h2>
+                    <p>
+                        Multiplayer sandbox game developed in Unreal Engine 5,
+                        focusing on physics systems, networking and player interaction.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span>Unreal Engine 5</span>
+                        <span>C++</span>
+                        <span>Multiplayer</span>
+                    </div>
+                    <span class="portfolio-link">
+                        View Case Study →
+                    </span>
+                </div>
+            </a>
+            <a href="sand.html" class="portfolio-card">
+                <img src="images/sand-raiders-of-sophie-pc-steam-cover.jpg" alt="Sand gameplay">
+                <div class="portfolio-content">
+                    <h2>Sand</h2>
+                    <p>
+                        Multiplayer sandbox game developed in Unreal Engine 5,
+                        focusing on physics systems, networking and player interaction.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span>Unreal Engine 5</span>
+                        <span>C++</span>
+                        <span>Multiplayer</span>
+                    </div>
+                    <span class="portfolio-link">
+                        View Case Study →
+                    </span>
+                </div>
+            </a>
+        </div>
+
+    </section>

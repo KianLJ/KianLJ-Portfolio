@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <title>Test Website</title>
+</head>
+
+<script>
+fetch("components/navbar.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("navbar").innerHTML = data;
+});
+
+fetch("components/footer.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+<body>
+    <div id="navbar"></div>
+
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="videos/videoplayback.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay">
+            <h1>Hi, I'm Kian</h1>
+            <h2>Games Design & Programming Student</h2>
+            <p>
+                Passionate about gameplay programming, technical problem solving
+                and creating engaging player experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="primary">View Projects</a>
+                <a href="CV.pdf" class="secondary">View CV</a>
+            </div>
+        </div>
+    </section>
+    <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <a href="celestial-frontier-portfolio.html" class="project-card">
+                <img src="images\sand-raiders-of-sophie-pc-steam-cover.jpg" alt="Sand gameplay">
+                <div class="project-content">
+                    <h3>Sand</h3>
+                    <p>
+                        Multiplayer sandbox game built in Unreal Engine 5,
+                        featuring physics interactions and online gameplay.
+                    </p>
+                    <div class="project-tags">
+                        <span>Unreal Engine 5</span>
+                        <span>C++</span>
+                        <span>Multiplayer</span>
+                    </div>
+                    <span class="project-link">
+                        View Project →
+                    </span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+</body>
+</html>
