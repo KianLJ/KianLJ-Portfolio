@@ -17,6 +17,11 @@ fetch("components/navbar.html")
 .then(data => {
     document.getElementById("navbar").innerHTML = data;
 });
+fetch("components/footer.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
 </script>
 
 <body>
@@ -71,21 +76,6 @@ fetch("components/navbar.html")
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="footer-content">
-            <h2>Kian Lee-Jones</h2>
-            <p>Games Design & Programming Student</p>
-            <div class="footer-links">
-                <a href="#">Email</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
-            <p>
-                Interested in game development opportunities? 
-                Feel free to get in touch.
-            </p>
-        </div>
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>
