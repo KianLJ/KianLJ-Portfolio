@@ -82,6 +82,12 @@
     margin-bottom:15px;
 }
 
+.portfolio-content h3{
+    font-size:1.1rem;
+    color:#83D483;
+    margin-bottom:15px;
+}
+
 .portfolio-content p{
     color:#D4D4D4;
     line-height:1.7;
