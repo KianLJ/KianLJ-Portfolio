@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <title>Kian lee-Jones</title>
+</head>
+
+<script>
+fetch("components/navbar.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("navbar").innerHTML = data;
+});
+fetch("components/footer.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+<body>
+    <div id="navbar"></div>
+    <section class="project-hero">
+        <video class="project-video" autoplay muted loop playsinline>
+            <source src="videos/Valhalla_ Bjorn Rising _ Click To Play.mp4" type="video/mp4">
+        </video>
+        <div class="project-overlay">
+            <h1>Valhalla: Bjorn Rising</h1>
+            <p>
+                A singleplayer Planetary Card Battler. You must terraform planets destined for doom using your celestial powers to restore balance so the inhabitants may prosper.
+            </p>
+            <div class="project-tags">
+                <span>Unreal Engine 5</span>
+                <span>MAYA</span>
+                <span>C++</span>
+                <span>Technical Designer</span>
+            </div>
+            <h3>Hover Over Me!</h3>
+        </div>
+    </section>
+    <section class="project-section">
+        <a href="projects.html">← Back</a>
+        <span><a href="https://github.com/KianLJ/CelestialFrontier">GitHub Page</a></span>
+        <h2>Overview</h2>
+        <div class="project-content">
+            <div class="project-image">
+                <span>Project Screenshot</span>
+            </div>
+            <div class="project-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer consequat nunc at velit aliquet, non tincidunt augue
+                    facilisis. Suspendisse potenti. Curabitur ac neque ut nunc
+                    tristique ullamcorper.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <h2>Overview</h2>
+        <div class="project-content">
+            <div class="project-image">
+                <span>Project Screenshot</span>
+            </div>
+            <div class="project-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer consequat nunc at velit aliquet, non tincidunt augue
+                    facilisis. Suspendisse potenti. Curabitur ac neque ut nunc
+                    tristique ullamcorper.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+</html>
