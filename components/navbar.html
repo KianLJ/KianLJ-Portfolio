@@ -1,11 +1,47 @@
 <header>
     <nav class="navbar">
-        <a href="index.html">Kian Lee-Jones</a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <a href="index.html" class="logo" id="logo-link">Kian Lee-Jones</a>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-home">Home</a></li>
+            <li><a href="projects.html" class="nav-projects">Projects</a></li>
+            <li><a href="skills.html" class="nav-skills">Skills</a></li>
+            <li><a href="contact.html" class="nav-contact">Contact</a></li>
         </ul>
     </nav>
 </header>
+
+<script>
+    // Detect current depth and adjust navbar links accordingly
+    function adjustNavbarLinks() {
+        // Determine current file path depth
+        const currentPath = window.location.pathname;
+        const pathParts = currentPath.split('/').filter(p => p.length > 0);
+        
+        // Check if we're in pages/ or pages/portfolio/
+        let isInPages = currentPath.includes('/pages/');
+        let isInPortfolio = currentPath.includes('/pages/portfolio/');
+        
+        let basePrefix = '';
+        if (isInPortfolio) {
+            basePrefix = '../../';
+        } else if (isInPages) {
+            basePrefix = '../';
+        }
+        
+        // Update all navigation links
+        document.getElementById('logo-link').href = basePrefix + 'index.html';
+        document.querySelector('.nav-home').href = basePrefix + 'index.html';
+        document.querySelector('.nav-projects').href = basePrefix + 'pages/projects.html';
+        document.querySelector('.nav-skills').href = basePrefix + 'pages/skills.html';
+        document.querySelector('.nav-contact').href = basePrefix + 'pages/contact.html';
+    }
+    
+    // Adjust links when navbar is fully loaded
+    adjustNavbarLinks();
+</script>
+

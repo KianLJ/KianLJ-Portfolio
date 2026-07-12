@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="css\projects.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
@@ -12,12 +13,32 @@
 </head>
 
 <script>
-fetch("components/navbar.html")
+fetch("../components/navbar.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("navbar").innerHTML = data;
+    
+    // Initialize hamburger menu after navbar is loaded
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    }
 });
-fetch("components/footer.html")
+fetch("../components/footer.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("footer").innerHTML = data;
@@ -36,9 +57,9 @@ fetch("components/footer.html")
             </p>
         </div>
         <div class="portfolio-grid">
-            <a href="celestial-frontier-portfolio.html" class="portfolio-card">
+            <a href="portfolio/celestial-frontier-portfolio.html" class="portfolio-card">
                 <div class="portfolio-image">
-                    <img src="images/CF-Cover-1.png" alt="">
+                    <img src="../images/CF-Cover-1.png" alt="">
                 </div>
                 <div class="portfolio-content">
                     <h2>Celestial Frontier</h2>
@@ -58,9 +79,9 @@ fetch("components/footer.html")
                     </span>
                 </div>
             </a>
-            <a href="workplace-displacement-portfolio.html" class="portfolio-card">
+            <a href="portfolio/workplace-displacement-portfolio.html" class="portfolio-card">
                 <div class="portfolio-image">
-                    <img src="images/WD-Cover.png" alt="">
+                    <img src="../images/WD-Cover.png" alt="">
                 </div>
                 <div class="portfolio-content">
                     <h2>Workplace Displacement</h2>
@@ -80,9 +101,9 @@ fetch("components/footer.html")
                     </span>
                 </div>
             </a>
-            <a href="soul-detective-portfolio.html" class="portfolio-card">
+            <a href="portfolio/soul-detective-portfolio.html" class="portfolio-card">
                 <div class="portfolio-image">
-                    <img src="images/SD-Cover.png" alt="">
+                    <img src="../images/SD-Cover.png" alt="">
                 </div>
                 <div class="portfolio-content">
                     <h2>Soul Detective</h2>
@@ -102,9 +123,9 @@ fetch("components/footer.html")
                     </span>
                 </div>
             </a>
-            <a href="valhalla-portfolio.html" class="portfolio-card">
+            <a href="portfolio/valhalla-portfolio.html" class="portfolio-card">
                 <div class="portfolio-image">
-                    <img src="images/Valhalla-Cover.png" alt="">
+                    <img src="../images/Valhalla-Cover.png" alt="">
                 </div>
                 <div class="portfolio-content">
                     <h2>Valhalla: Bjorn Rising </h2>
