@@ -219,3 +219,164 @@
     transition:transform .4s ease;
 }
 
+/* Responsive Project Page */
+@media (max-width: 1024px) {
+    .project-hero {
+        aspect-ratio: 16 / 9;
+        margin: 30px auto 50px;
+    }
+    
+    .project-overlay {
+        width: 400px;
+        left: 4%;
+        padding: 40px 0;
+    }
+    
+    .project-overlay h1 {
+        font-size: clamp(1.8rem, 6vw, 3.5rem);
+        margin-bottom: 10px;
+    }
+    
+    .project-overlay p {
+        font-size: 1.1rem;
+    }
+    
+    .project-section {
+        margin: 60px auto;
+        padding-bottom: 60px;
+    }
+    
+    .project-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .project-content {
+        grid-template-columns: 350px 1fr;
+        gap: 40px;
+    }
+    
+    .project-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-hero {
+        aspect-ratio: 4 / 3;
+        margin: 20px auto 40px;
+        border-radius: 15px;
+    }
+    
+    .project-overlay {
+        width: 100%;
+        left: 0;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.3) 100%);
+    }
+    
+    .project-overlay h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        margin-bottom: 10px;
+    }
+    
+    .project-overlay h3 {
+        font-size: 0.85rem;
+        margin-top: 15px;
+    }
+    
+    .project-overlay p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .project-overlay a {
+        font-size: 1.1rem;
+    }
+    
+    .project-section {
+        width: min(95%, 1200px);
+        margin: 40px auto;
+        padding-bottom: 40px;
+    }
+    
+    .project-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .project-section a {
+        font-size: 1.1rem;
+    }
+    
+    .project-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .project-image {
+        aspect-ratio: 16 / 9;
+        border-radius: 15px;
+    }
+    
+    .project-text p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-hero {
+        aspect-ratio: 1 / 1;
+        margin: 15px auto 30px;
+        border-radius: 12px;
+    }
+    
+    .project-overlay {
+        padding: 20px 15px;
+    }
+    
+    .project-overlay h1 {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        margin-bottom: 8px;
+    }
+    
+    .project-overlay h3 {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+    
+    .project-overlay p {
+        font-size: 0.85rem;
+    }
+    
+    .project-overlay a {
+        font-size: 0.95rem;
+    }
+    
+    .project-section {
+        margin: 30px auto;
+        padding-bottom: 30px;
+    }
+    
+    .project-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .project-section a {
+        font-size: 0.95rem;
+    }
+    
+    .project-image {
+        border-radius: 12px;
+    }
+    
+    .project-image span {
+        font-size: 0.85rem;
+    }
+    
+    .project-text p {
+        font-size: 0.8rem;
+    }
+}

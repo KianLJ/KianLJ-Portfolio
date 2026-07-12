@@ -88,3 +88,92 @@
 .skill-card a{
     color: #40bff1;
 }
+
+/* Responsive Skills */
+@media (max-width: 1024px) {
+    .skills-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .skills-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .skills-section h2 {
+        font-size: 2rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-hero {
+        margin: 30px auto;
+    }
+    
+    .skills-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .skills-hero p {
+        font-size: 0.95rem;
+        margin-top: 15px;
+    }
+    
+    .skills-section {
+        margin: 30px auto;
+    }
+    
+    .skills-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .skill-card {
+        max-width: none;
+        padding: 20px;
+        box-shadow: 0 12px 30px rgba(0,0,0,.2);
+    }
+    
+    .skill-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .skills-hero p {
+        font-size: 0.85rem;
+    }
+    
+    .skills-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .skill-card {
+        padding: 15px;
+    }
+    
+    .skill-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .skill-card p {
+        font-size: 0.8rem;
+    }
+}
