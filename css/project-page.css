@@ -34,6 +34,7 @@
         );
         z-index:1;
         transition:opacity .4s ease;
+        pointer-events:none;
     }
 
     .project-hero:hover::before{
@@ -50,6 +51,7 @@
     flex-direction:column;
     padding:60px 0;
     z-index:2;
+    pointer-events:none;
 }
 
 .project-hero:hover .project-overlay{
@@ -94,7 +96,7 @@
     color: #40bff1;
 }
 
-.project-overlay h3{
+.interaction-text{
     margin-top:auto;
     font-size:1rem;
     font-weight:500;
@@ -118,11 +120,16 @@
 
 }
 
+.interaction-text::after{
+    content:"HOVER OVER ME!";
+}
+
 .project-overlay p{
     font-size:1.35rem;
     line-height:1.8;
     max-width:700px;
 }
+
 
 .project-section:first-of-type{
     margin-top:0;
@@ -379,4 +386,10 @@
     .project-text p {
         font-size: 0.8rem;
     }
+}
+
+@media (hover: none){
+        .interaction-text::After{
+        content: "TAP TO REVEAL!";
+        }
 }
